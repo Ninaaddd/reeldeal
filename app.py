@@ -3,14 +3,18 @@ import pickle
 import pandas as pd
 import requests
 import time
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+API_KEY = os.getenv('API_KEY')
 
 # Set the page title
 st.set_page_config(page_title="Reel Deal")
 
 
 def fetch_poster(movie_id):
-    url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key=29478c883a6b4109c7cefe0d8ac24a12&language=en-US'
+    url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&language=en-US'
     for i in range(5):  # Retry up to 5 times
         try:
             response = requests.get(url, timeout=10)
