@@ -1,4 +1,4 @@
-# ReelDeal Movie Recommendation System
+# ReelDeal - Movie Recommendation System
 
 Welcome to the **ReelDeal** movie recommendation system! This project provides a recommendation engine that suggests movies based on user input. It uses machine learning models and the Movie Database API to deliver personalized recommendations.
 
