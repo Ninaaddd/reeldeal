@@ -17,3 +17,4 @@ First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/yourusername/reeldeal.git
 cd reeldeal
+pip install -r requirements.txt
